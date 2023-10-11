@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: rgb(226, 225, 225);
+}
+
+section {
+  padding: 8px;
+  height: 224px;
+  transition-timing-function: ease-in-out;
+  position: relative;
+}
+
+.div-red {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  position: absolute;
+  transition-duration: 3s;
+  left: 0;
+  margin-left: 8px;
+}
+
+.div-green {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  position: absolute;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  left: 0;
+  top: 116px;
+  margin-left: 8px;
+}
+
+section:hover div {
+  left: 90%;
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: peachpuff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.image {
+  width: 320px;
+  height: 320px;
+  background-image: url(./../images/duck.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.39);
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  transform: translate(0, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  opacity: 0;
+
+  transform: translate;
+  /* transform-origin: bottom; */
+}
+
+section:hover .overlay {
+  transform: translate(0, 0%);
+  opacity: 1;
+}
